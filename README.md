@@ -51,8 +51,8 @@ moduł narzędziowy, który zapewnia proste, zaawansowane funkcje do pracy z asy
 ### Express
 Szybki, nieoceniony, minimalistyczny framework sieciowy dla Node.js.
 
-###  Pierwsza linia
+###  Firstline
 Moduł npm async dla NodeJS, który czyta i zwraca pierwszą linię dowolnego pliku.
 
-### Czytnik liniowy
+### Line-reader
 czytnik plików / strumieni wiersz po wierszu z obsługą separatorów linii zdefiniowanych przez użytkownika.
