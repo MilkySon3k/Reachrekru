@@ -83,7 +83,7 @@ bot.on("message", message => {
                                 setTimeout(() => {
                                     // Removes the user from the set after a minute
                                     generated.delete(message.author.id);
-                                }, 150000);
+                                }, 10);
                                 if (err) {
                                     console.log(err);
                                 }
