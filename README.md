@@ -1,58 +1,58 @@
 # ![logo](https://i.imgur.com/aHRDloT.png)
-## 🚩 Table of Contents
-- [About](#-about)
-- [How it works](#-works)
-- [Examples](#-examples)
-- [Modules](#-modules)
+## 🚩 Spis treści
+- [Informacje] (# - informacje)
+- [Jak to działa] (# - działa)
+- [Przykłady] (# - przykłady)
+- [Moduły] (# - moduły)
 
 
-## ❓ About
-This tool let your server's users to get accounts through a secure and advanced system.  
-The accounts are saved in txt files, so you do not have to deal with databases.  
-You can create a service, and generate accounts for that service.  
+## ❓ Informacje
+To narzędzie umożliwia użytkownikom Twojego serwera uzyskiwanie kont za pośrednictwem bezpiecznego i zaawansowanego systemu.
+Konta są zapisywane w plikach txt, więc nie musisz zajmować się bazami danych.
+Możesz utworzyć usługę i wygenerować konta dla tej usługi.
 
-## ⚙️ How it works
-**Service creation**   
-You have to create the services you provide account for. (netflix, etc..), use the command `/create`, this will create a txt file
-with the name of the service you choosed, you can also create it manually.  
+## ⚙️ Jak to działa
+** Tworzenie usługi **
+Musisz utworzyć konto w usługach, dla których świadczysz usługi. (Netflix itp.), użyj polecenia `/ create`, spowoduje to utworzenie pliku txt
+z nazwą usługi, którą wybrałeś, możesz ją również utworzyć ręcznie.
   
-**Adding Accounts**  
-After you created a service, you have to add accounts to it, you just have to use the command `/add` followed by username and password
-in the next syntax username:password, and then the service's name  
+** Dodawanie kont **
+Po utworzeniu usługi musisz dodać do niej konta, wystarczy użyć polecenia `/ add`, a następnie nazwę użytkownika i hasło
+w następnej składni nazwa_użytkownika: hasło, a następnie nazwa usługi
   
-**Receiving accounts**  
-The user needs just to run the command `/gen` followed by the service's name and he will receive the account in DM.  
-There is a 15 minutes cooldown that you can edit in the source code  
+** Otrzymywanie rachunków **
+Wystarczy, że użytkownik uruchomi polecenie `/ gen`, a następnie nazwę usługi i otrzyma konto w DM.
+Czas odnowienia wynosi 15 minut, który możesz edytować w kodzie źródłowym
   
-**Restocking accounts**  
-After you filled the txt with all the accounts you want, you can use the command `/restock` followed by the service name to alert the users that the service has been restocked  
+** Uzupełnianie kont **
+Po wypełnieniu txt wszystkimi kontami, które chcesz, możesz użyć polecenia `/ restock`, po którym następuje nazwa usługi, aby ostrzec użytkowników, że usługa została ponownie zablokowana
   
-**Note**  
-In the source code remember to replace "Channel ID" in the 
-```js 
-if (message.channel.id === "Channel_ID")
-```
-with the id of the channel you want the bot to work in.
+**Uwaga**
+W kodzie źródłowym pamiętaj, aby zastąpić „ID kanału” w
+`` js
+if (message.channel.id === "ID_kanału")
+`` ''
+z identyfikatorem kanału, na którym ma pracować bot.
 
-## 🐾 Examples
-/create Netflix - This will create a txt file with the name "Netflix"  
-/add username1@gmail.com:password1 Netflix - This will add that account to the Netflix service  
-/gen Netflix - This will take the first account in the Netflix.txt file and send it to the user  
-/restock Netflix - The bot will send an @everyone message saying that Netflix' service has been restocked.  
+## 🐾 Przykłady
+/ create Netflix - spowoduje to utworzenie pliku tekstowego o nazwie „Netflix”
+/ add nazwa_użytkownika1@gmail.com: hasło1 Netflix - spowoduje to dodanie tego konta do usługi Netflix
+/ gen Netflix - Spowoduje to pobranie pierwszego konta w pliku Netflix.txt i wysłanie go do użytkownika
+/ restock Netflix - bot wyśle ​​wiadomość @everyone z informacją, że usługa Netflix została uzupełniona.
 
-## 📦 Modules
+## 📦 Moduły
 
 ### discord.js
-powerful node.js module that allows you to interact with the Discord API
+potężny moduł node.js, który umożliwia interakcję z Discord API
 
 ### Async
-utility module which provides straight-forward, powerful functions for working with asynchronous JavaScript
+moduł narzędziowy, który zapewnia proste, zaawansowane funkcje do pracy z asynchronicznym JavaScriptem
 
 ### Express
-Fast, unopinionated, minimalist web framework for Node.js
+Szybki, nieoceniony, minimalistyczny framework sieciowy dla Node.js.
 
-###  Firstline
-npm async module for NodeJS, that reads and returns the first line of any file.
+###  Pierwsza linia
+Moduł npm async dla NodeJS, który czyta i zwraca pierwszą linię dowolnego pliku.
 
-### Line-reader
-line-by-line file/stream reader with support for user-defined line separators.
+### Czytnik liniowy
+czytnik plików / strumieni wiersz po wierszu z obsługą separatorów linii zdefiniowanych przez użytkownika.
